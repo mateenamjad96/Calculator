@@ -4,12 +4,9 @@ st.title("🧮 Calculator")
 
 st.markdown("""
 <style>
-            
-div.stButton > button {
-    height: 60px;       /* Change this to increase button height */
-    font-size: 24px;    /* Bigger text if you want */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-    border:none;
+.calc-container {
+    max-width: 400px;
+    margin: auto;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -40,7 +37,6 @@ def clear_calc():
 st.text_input(
     label="Calculator Display",
     label_visibility="collapsed",
-    value=st.session_state.math_equation,
     key="math_equation",
     on_change=calculate_result,
     placeholder="0"
