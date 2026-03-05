@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("🧮 Calculator - Mateen")
+st.title("🧮 Calculator")
 
 st.markdown("""
 <style>
